@@ -1,0 +1,19 @@
+.card-shadow{
+    box-shadow: 6px 6px grey;
+    transition: transform, transform 0.2s ease;
+}
+.card-shadow:hover{
+    box-shadow: 10px 10px black;
+    transform: translateY(-10px);
+    transform: scale(1.005);
+}
+
+.nav-shadow{
+    box-shadow: 6px 3px grey;
+    transition: transform, transform 0.3s ease;
+}
+.nav-shadow:hover{
+    box-shadow: 8px 5px black;
+    transform: translateY(5px);
+    transform: scaleY(1.1)
+}

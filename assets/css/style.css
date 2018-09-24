@@ -1,6 +1,7 @@
 .card-shadow{
     box-shadow: 6px 6px grey;
-    transition: transform, transform 0.2s ease;
+    transition: transform, transform .02s ease;
+    transition: box-shadow 1s ease;
 }
 .card-shadow:hover{
     box-shadow: 10px 10px black;
@@ -11,6 +12,7 @@
 .nav-shadow{
     box-shadow: 6px 3px grey;
     transition: transform, transform 0.3s ease;
+    transition: box-shadow 1s ease;
 }
 .nav-shadow:hover{
     box-shadow: 8px 5px black;

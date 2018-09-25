@@ -36,7 +36,7 @@ public class proj2
         int totalPointsEarned = 0, totalPointsPossible = 0;
 
         for(int i = 0; i < 3; i++){
-            System.out.println("Enter the name of the excercise: ");
+            System.out.println("Enter the name of the exercise: ");
             nameOfExcercises[i] = input.nextLine();
 
             System.out.println("Enter the number of points Earned: ");

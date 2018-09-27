@@ -18,10 +18,6 @@
  *      by calcCost( ) .
  * Write test code to create several pizzas and output their descriptions.
  * For example, a large pizza with one cheese, one pepperoni and two ham toppings should cost a total of $22.
- *  
- * CS249 with Spetka
- * September 2018
- * Language: Java (javac target)
  ***********************************************************************************************************************/
 
 
@@ -36,15 +32,51 @@ public class Pizza {
         this.numOfCheeses = 0;
         this.numOfPepperonis = 0;
         this.numOfHams = 0;
-
     }
 
     public Pizza(String sizeOfPizza, int numOfCheeses, int numOfPepperonis, int numOfHams) {
+        setSizeOfPizza(sizeOfPizza);
+        setNumOfCheese(numOfCheeses);
+        setNumOfPepperoni(numOfPepperonis);
+        setNumOfHam(numOfHams);
+    }
+
+    public String getSizeOfPizza()
+    {
+        return sizeOfPizza;
+    }
+    public void setSizeOfPizza(String sizeOfPizza)
+    {
         this.sizeOfPizza = sizeOfPizza;
+    }
+
+    public int getNumOfCheese()
+    {
+        return numOfCheeses;
+    }
+    public void setNumOfCheese(int numOfCheeses)
+    {
         this.numOfCheeses = numOfCheeses;
+    }
+
+    public int getNumOfPepperoni()
+    {
+        return numOfPepperonis;
+    }
+    public void setNumOfPepperoni(int numOfPepperonis)
+    {
         this.numOfPepperonis = numOfPepperonis;
+    }
+
+    public int getNumOfHam()
+    {
+        return numOfHams;
+    }
+    public void setNumOfHam(int numOfHams)
+    {
         this.numOfHams = numOfHams;
     }
+
 
     public double calcCost() {
         double totalCost = (numOfCheeses + numOfPepperonis + numOfHams) * 2;
@@ -53,7 +85,7 @@ public class Pizza {
         } else if (sizeOfPizza.equalsIgnoreCase("medium")) {
             totalCost += 12;
         } else if (sizeOfPizza.equalsIgnoreCase("large")) {
-            totalCost += 12;
+            totalCost += 14;
         } else {
             totalCost = 0.0;
         }

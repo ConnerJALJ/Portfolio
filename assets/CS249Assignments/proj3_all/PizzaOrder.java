@@ -3,11 +3,11 @@
  * Create a PizzaOrder class that allows up to three pizzas to be saved in an order.
  * Each pizza saved should be a Pizza object as described in Programming Project 4.11.
  * In addition to appropriate instance variables and constructors, add the following methods:
- *      # public void setNumPizzas(int numPizzas) —sets the number of pizzas in the order. numPizzas must be between 1 and 3.
- *      # public void setPizza1(Pizza pizza1) —sets the first pizza in the order.
- *      # public void setPizza2(Pizza pizza2) —sets the second pizza in the order.
- *      # public void setPizza3(Pizza pizza3) —sets the third pizza in the order.
- *      # public double calcTotal() —returns the total cost of the order.
+ *      # public void setNumPizzas(int numPizzas) //sets the number of pizzas in the order. numPizzas must be between 1 and 3.
+ *      # public void setPizza1(Pizza pizza1) //sets the first pizza in the order.
+ *      # public void setPizza2(Pizza pizza2) //sets the second pizza in the order.
+ *      # public void setPizza3(Pizza pizza3) //sets the third pizza in the order.
+ *      # public double calcTotal() //returns the total cost of the order.
  * Write a main method to test the class. The setPizza2 and setPizza3 methods will be used only if
  * there are two or three pizzas in the order, respectively.
  * Sample code illustrating the methods is shown below. Note that first three lines are incomplete.

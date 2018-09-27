@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav">
           <a href="/" class="nav-item nav-link active">Home<span class="sr-only">(current)</span></a>
-          <a href="CS249.php" class="nav-item nav-link">CS249 Assignments</a>
+          <a href="CS249" class="nav-item nav-link">CS249 Assignments</a>
           <a href="#" class="nav-item nav-link">Coming Soon</a>
         </div>
       </div>  

@@ -4,12 +4,6 @@
     #RewriteRule .* http://localhost/html/%1 [R=301,L]
 
 
-#Removing .html from urls
-    RewriteEngine on
-    RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-    RewriteRule ^ /%1 [NC,L,R]
-    RewriteCond %{REQUEST_FILENAME}.html -f
-    RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 #Removing .php from urls
     RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
     RewriteRule ^ /%1 [NC,L,R]

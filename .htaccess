@@ -3,7 +3,7 @@
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
     RewriteRule .* http://localhost/html/%1 [R=301,L]
 
-#Removing .php from urls
-RewriteCond /%{REQUEST_FILENAME}.php -f
-RewriteRule ^([a-zA-Z0-9_-\s]+)/$ /$1.php
+    RewriteRule %{REQUEST_FILENAME}.php !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.*)/$ /$1.php
 </IfModule>

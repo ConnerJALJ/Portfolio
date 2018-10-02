@@ -2,4 +2,7 @@
    RewriteEngine On
    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
    RewriteRule .* http://localhost/html/%1 [R=301,L]
+
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /php/(.*).php\ HTTP/
+   RewriteRule .* http://localhost/php/%1 [R=301,L]
 </IfModule>

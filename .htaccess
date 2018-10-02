@@ -1,4 +1,8 @@
 <IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
+    RewriteRule .* http://localhost/html/%1 [R=301,L]
+
 
 #Removing .php from urls
     RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]

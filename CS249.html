@@ -258,8 +258,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 p-3">
-        <div class="card text-white bg-secondary card-shadow">
+      <div class="col-12 col-sm-6 p-3 d-flex">
+        <div class="card text-white bg-secondary card-shadow align-self-stretch flex-fill">
           <div class="card-header">
             <h4><Strong>Pet Vaccinations with an Abstract Class and Methods</Strong></h4>
           </div>
@@ -281,6 +281,221 @@
             <a href="assets/CS249Assignments/proj5.2/Pet.java" class="btn btn-primary" target="_blank">Pet.java</a>
             <a href="assets/CS249Assignments/proj5.2/Dog.java" class="btn btn-primary" target="_blank">Dog.java</a>
             <a href="assets/CS249Assignments/proj5.2/Cat.java" class="btn btn-primary" target="_blank">Cat.java</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 p-3">
+        <div class="card text-white bg-secondary card-shadow">
+          <div class="card-header">
+            <h4><Strong>Saving Name and Date of Birth/Death to File</Strong></h4>
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-3"><em> LABEL: 6.1_CH10_V5_Project_11_page_646 </em></h6>
+            <p class="card-text">
+              Change the definition of the class Person in Display 5.19 to be serializable.
+              Note that this requires that you also change the class Date.
+              Then write a program to maintain a binary file of records of people
+              (records of type Person ).
+              Allow commands to delete a record specified by the person’s name,
+              to add a record, to retrieve and display a record, and to obtain all
+              records of people within a specified age range.
+              To obtain the age of a person, you need the current date.
+              Your program will ask the user for the current date when the program begins.
+              You can do this with random access files, but do not use random access files
+              for this exercise. Use a file or files that record records with the
+              method writeObject of the class ObjectOutputStream.
+            </p>
+            <p class="card-text">Language: Java
+              <br>Rough Date: October 2018
+              <br>Author: Conner LaPage-Jenkins
+            </p>
+            <a href="assets/CS249Assignments/proj6/proj6_test.java" class="btn btn-primary" target="_blank">proj6_test.java</a>
+            <a href="assets/CS249Assignments/proj6/Person.java" class="btn btn-primary" target="_blank">Perosn.java</a>
+            <a href="assets/CS249Assignments/proj6/Date.java" class="btn btn-primary" target="_blank">Date.java</a>
+            <a href="assets/CS249Assignments/proj6/people.dat" class="btn btn-info" target="_blank">people.dat</a>
+            <a href="assets/CS249Assignments/proj6/peopleTemp.dat" class="btn btn-info" target="_blank">peopleTemp.dat</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 p-3 d-flex">
+        <div class="card text-white bg-secondary card-shadow align-self-stretch flex-fill">
+          <div class="card-header">
+            <h4><Strong>Simple Insertion Sort Program</Strong></h4>
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-3"><em> LABEL: 7.1_CH12_V5_Project_9_page_710 </em></h6>
+            <p class="card-text">
+              Use the sorting pattern to implement insertion sort. In insertion sort, the split method always returns
+              the value (end — 1) . This results in splitting the array into two pieces, one with a single value at the
+              end of the array, and the other with everything else. The join method does more work. A precondition for
+              entry into join is that the elements from a[begin] to a[end-1] will be in sorted order. The method should
+              insert a[end] into the correct spot from a[begin] to a[end] such that sorted order is maintained. For
+              example, if array a contains {2, 4, 6, 8, 5} where begin = 0 and end = 4 then a[end] = 5 and the method
+              should insert the value 5 between the 4 and 6, resulting in {2, 4, 5, 6, 8} . This entails copying the 6
+              and 8 one element to the right, and then copying the value 5 to index 2.
+            </p>
+            <p class="card-text">Language: Java
+              <br>Rough Date: October 2018
+              <br>Author: Conner LaPage-Jenkins
+            </p>
+            <a href="assets/CS249Assignments/proj7/InsertionSort.java" class="btn btn-primary" target="_blank">InsertionSort.java</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 p-3 d-flex">
+        <div class="card text-white bg-secondary card-shadow align-self-stretch flex-fill">
+          <div class="card-header">
+            <h4><Strong>Shape Interface</Strong></h4>
+          </div>
+          <div class="card-body d-inline-flex flex-wrap">
+            <h6 class="card-subtitle mb-3"><em> LABEL: 8.1_CH13_V5_Problem_10_page_756_part1 </em></h6>
+            <p class="card-text">
+              Define an interface named Shape with a single method named area that calculates
+              the area of the geometric shape:
+              public double area();
+              Next, define a class named Circle that implements Shape . The Circle class should
+              have an instance variable for the radius, a constructor that sets the radius, accessor/
+              mutator methods for the radius, and an implementation of the area method. Also
+              define a class named Rectangle that implements Shape . The Rectangle class
+              should have instance variables for the height and width, a constructor that sets the
+              height and width, accessor and mutator methods for the height and width, and an
+              implementation of the area method.
+            </p>
+            <p class="card-text">Language: Java
+              <br>Rough Date: October 2018
+              <br>Author: Conner LaPage-Jenkins
+            </p>
+            <div class="align-self-end">
+              <a href="assets/CS249Assignments/proj8.1/proj8_1_test.java" class="btn btn-primary my-1" target="_blank">proj8_1_test.java</a>
+              <a href="assets/CS249Assignments/proj8.1/Shape.java" class="btn btn-primary" target="_blank">Shape.java</a>
+              <a href="assets/CS249Assignments/proj8.1/Circle.java" class="btn btn-primary" target="_blank">Circle.java</a>
+              <a href="assets/CS249Assignments/proj8.1/Rectangle.java" class="btn btn-primary" target="_blank">Rectangle.java</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 p-3 d-flex">
+        <div class="card text-white bg-secondary card-shadow align-self-stretch flex-fill">
+          <div class="card-header">
+            <h4><Strong>Shape Interface cont.</Strong></h4>
+          </div>
+          <div class="card-body d-inline-flex flex-wrap">
+            <h6 class="card-subtitle mb-3"><em> LABEL: 8.2_CH13_Project_8.2_Add_90Triangle </em></h6>
+            <p class="card-text">
+              Adds RightTriangle Class to proj8.1
+            </p>
+            <p class="card-text align-self-end">Language: Java
+              <br>Rough Date: October 2018
+              <br>Author: Conner LaPage-Jenkins
+            </p>
+            <div class="align-self-end">
+              <a href="assets/CS249Assignments/proj8.2/proj8_2_test.java" class="btn btn-primary my-1" target="_blank">proj8_2_test.java</a>
+              <a href="assets/CS249Assignments/proj8.2/Shape.java" class="btn btn-primary" target="_blank">Shape.java</a>
+              <a href="assets/CS249Assignments/proj8.2/Circle.java" class="btn btn-primary" target="_blank">Circle.java</a>
+              <a href="assets/CS249Assignments/proj8.2/Rectangle.java" class="btn btn-primary" target="_blank">Rectangle.java</a>
+              <a href="assets/CS249Assignments/proj8.2/RightTriangle.java" class="btn btn-primary" target="_blank">RightTriangle.java</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 p-3 d-flex">
+        <div class="card text-white bg-secondary card-shadow align-self-stretch flex-fill">
+          <div class="card-header">
+            <h4><Strong>Shape Interface Enhanced</Strong></h4>
+          </div>
+          <div class="card-body d-flex flex-wrap">
+            <h6 class="card-subtitle mb-3"><em> LABEL: 8.3_CH13_Project_8.3_Print_Type_Shape </em></h6>
+            <p class="card-text">
+              Enhances main and ShowArea methods from 8.2
+              creates an array of shapes and prints the area and type of shape for each shape in the array
+            </p>
+            <p class="card-text align-self-end">Language: Java
+              <br>Rough Date: October 2018
+              <br>Author: Conner LaPage-Jenkins
+            </p>
+            <div class="align-self-end">
+              <a href="assets/CS249Assignments/proj8.3/proj8_3_test.java" class="btn btn-primary my-1" target="_blank">proj8_3_test.java</a>
+              <a href="assets/CS249Assignments/proj8.3/Shape.java" class="btn btn-primary" target="_blank">Shape.java</a>
+              <a href="assets/CS249Assignments/proj8.3/Circle.java" class="btn btn-primary" target="_blank">Circle.java</a>
+              <a href="assets/CS249Assignments/proj8.3/Rectangle.java" class="btn btn-primary" target="_blank">Rectangle.java</a>
+              <a href="assets/CS249Assignments/proj8.3/RightTriangle.java" class="btn btn-primary" target="_blank">RightTriangle.java</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 p-3 d-flex">
+        <div class="card text-white bg-secondary card-shadow align-self-stretch flex-fill">
+          <div class="card-header">
+            <h4><Strong>Generic MyMathClass</Strong></h4>
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-3"><em> LABEL: 9.1_CH14_V5_Problem_4_page_799 </em></h6>
+            <p class="card-text">
+              Write a generic class, MyMathClass, with a type parameter T where T is a numeric object type
+              (e.g., Integer, Double, or any class that extends java.lang.Number ).
+              Add a method named standardDeviation that takes an ArrayList of type T and returns as a double
+              the standard deviation of the values in the ArrayList.
+              Use the doubleValue() method in the Number class to retrieve the value of each number as a double.
+              Refer to Programming Project 6.5 for a definition of computing the standard deviation.
+              Test your method with suitable data.
+              Your program should generate a compile-time error if your standard deviation method
+              is invoked on an ArrayList that is defined for nonnumeric elements (e.g., Strings ).
+            </p>
+            <p class="card-text">Language: Java
+              <br>Rough Date: November 2018
+              <br>Author: Conner LaPage-Jenkins
+            </p>
+            <a href="assets/CS249Assignments/proj9/proj9_test.java" class="btn btn-primary" target="_blank">proj9_test.java</a>
+            <a href="assets/CS249Assignments/proj9/MyMathClass.java" class="btn btn-primary" target="_blank">MyMathClass.java</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 p-3 d-flex">
+        <div class="card text-white bg-secondary card-shadow align-self-stretch flex-fill">
+          <div class="card-header">
+            <h4><Strong>Average Movie Ratings w/ Hashmaps and FileIO</Strong></h4>
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-3"><em> LABEL: 10.1_CH16_V5_Project_8_page_940 </em></h6>
+            <p class="card-text">
+              You have collected a file of movie ratings where each movie is rated from 1 (bad) to 5 (excellent).
+              The first line of the file is a number that identifies how many ratings are in the file.
+              Each rating then consists of two lines:
+              the name of the movie followed by the numeric rating from 1 to 5.
+              Here is a sample rating file with four unique movies and seven ratings:
+              <br>***************EXAMPLE****************
+              <br>Harry Potter and the Half-Blood Prince
+              <br>4
+              <br>Harry Potter and the Half-Blood Prince
+              <br>5
+              <br>Army of the Dead
+              <br>1
+              <br>Harry Potter and the Half-Blood Prince
+              <br>4
+              <br>Army of the Dead
+              <br>2
+              <br>The Uninvited
+              <br>4
+              <br>Pandorium
+              <br>3
+              <br>***************EXAMPLE****************
+              <br>Write a program that reads a file in this format, calculates the average rating for each movie,
+              and outputs the average along with the number of reviews.
+              Here is the desired output for the sample data:
+              <br>Harry Potter and the Half-Blood Prince: 3 reviews, average of 4.3 / 5
+              <br>Army of the Dead: 2 reviews, average of 1.5 / 5
+              <br>The Uninvited: 1 review, average of 4 / 5
+              <br>Pandorium: 1 review, average of 3 / 5
+              Use a HashMap or multiple HashMaps to calculate the output.
+              Your map(s) should index from a string representing each movie’s name to integers
+              that store the number of reviews for the movie and the sum of the ratings for the movie.
+            </p>
+            <p class="card-text">Language: Java
+              <br>Rough Date: November 2018
+              <br>Author: Conner LaPage-Jenkins
+            </p>
+            <a href="assets/CS249Assignments/proj10/proj10_test.java" class="btn btn-primary" target="_blank">proj10_test.java</a>
+            <a href="assets/CS249Assignments/proj10/ratings" class="btn btn-info" target="_blank">ratings</a>
           </div>
         </div>
       </div>

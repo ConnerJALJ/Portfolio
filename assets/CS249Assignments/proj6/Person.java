@@ -47,7 +47,7 @@ public class Person implements java.io.Serializable {
         else
             diedString = died.toString();
 
-        return(name = ", " + born + "-" + diedString);
+        return(name + "; " + born + " - " + diedString);
     }
 
     public boolean equals(Person otherPerson){

@@ -55,6 +55,11 @@ public class Date implements java.io.Serializable{
         }
     }
 
+    @Override
+    public String toString() {
+       return month+" "+day+", "+year;
+    }
+
     void setDate(String monthString, int day, int year){
         if(dateOK(monthString, day, year)){
             this.month = monthString;

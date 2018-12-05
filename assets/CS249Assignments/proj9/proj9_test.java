@@ -8,6 +8,10 @@
  * Test your method with suitable data.
  * Your program should generate a compile-time error if your standard deviation method
  * is invoked on an ArrayList that is defined for nonnumeric elements (e.g., Strings ).
+ * 
+ * CS249 with Spetka
+ * October 2018
+ * Language: Java (javac target)
 ***********************************************************************************************************************/
 import java.util.*;
 

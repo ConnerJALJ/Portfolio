@@ -1,3 +1,4 @@
+
 /***********************************************************************************************************************
  *  You have collected a file of movie ratings where each movie is rated from 1 (bad) to 5 (excellent).
  *  The first line of the file is a number that identifies how many ratings are in the file.
@@ -34,6 +35,10 @@
  *  Use a HashMap or multiple HashMaps to calculate the output.
  *  Your map(s) should index from a string representing each movie’s name to integers
  *  that store the number of reviews for the movie and the sum of the ratings for the movie.
+ * 
+ * CS249 with Spetka
+ * October 2018
+ * Language: Java (javac target)
 ***********************************************************************************************************************/
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -48,28 +53,26 @@ public class proj10_test {
 
         String st;
         BufferedReader ratingBuffer = new BufferedReader(new FileReader("ratings"));
-        while((st = ratingBuffer.readLine()) != null){
-            if(!reviewMap.containsKey(st)){
+        while ((st = ratingBuffer.readLine()) != null) {
+            if (!reviewMap.containsKey(st)) {
                 reviewMap.put(st, 1);
                 averageRatingMap.put(st, Double.parseDouble(ratingBuffer.readLine()));
-            }else{
-                reviewMap.put(st, (reviewMap.get(st)+1));
+            } else {
+                reviewMap.put(st, (reviewMap.get(st) + 1));
                 averageRatingMap.put(st, (Double.parseDouble(ratingBuffer.readLine()) + averageRatingMap.get(st)));
             }
         }
 
         Iterator it = reviewMap.entrySet().iterator();
         DecimalFormat decimal = new DecimalFormat("####.#");
-        while (it.hasNext()){
+        while (it.hasNext()) {
             HashMap.Entry entry = (HashMap.Entry) it.next();
             String key = (String) entry.getKey();
 
             averageRatingMap.put(key, (averageRatingMap.get(key) / reviewMap.get(key)));
 
-            System.out.println( key + ": " + entry.getValue()             +
-                                " review(s), average of "                 +
-                                decimal.format(averageRatingMap.get(key)) +
-                                " / 5"                                   );
+            System.out.println(key + ": " + entry.getValue() + " review(s), average of "
+                    + decimal.format(averageRatingMap.get(key)) + " / 5");
         }
     }
 }

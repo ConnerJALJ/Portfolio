@@ -1,7 +1,6 @@
 /***********************************************************************************************************************
  * Test code for a saved pizza order
  * 
- * 
  * CS249 with Spetka
  * September 2018
  * Language: Java (javac target)

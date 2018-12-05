@@ -11,6 +11,10 @@
  * You can do this with random access files, but do not use random access files
  * for this exercise. Use a file or files that record records with the
  * method writeObject of the class ObjectOutputStream.
+ * 
+ * CS249 with Spetka
+ * October 2018
+ * Language: Java (javac target)
 ***********************************************************************************************************************/
 import java.io.*;
 import java.util.*;

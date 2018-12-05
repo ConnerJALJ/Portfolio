@@ -9,6 +9,10 @@
  *  should have instance variables for the height and width, a constructor that sets the
  *  height and width, accessor and mutator methods for the height and width, and an
  *  implementation of the area method.
+ * 
+ * CS249 with Spetka
+ * October 2018
+ * Language: Java (javac target)
 ***********************************************************************************************************************/
 public class proj8_1_test {
     public static void main(String args[]){

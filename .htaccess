@@ -1,8 +1,8 @@
-#<IfModule mod_rewrite.c>
-#    RewriteEngine on
-#    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
-#    RewriteRule .* http://localhost/html/%1 [R=301,L]
-#</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
+    RewriteRule .* http://localhost/html/%1 [R=301,L]
+</IfModule>
 
 #example.com/page will display the contents of example.com/page.html
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Conner LaPage-Jenkins" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Galley Menu</title>
+  </head>
+  <body>
+    <h1>Galley Menu</h1>
+    <h3>Today's Special</h3>
+    <hr style="margin-left: 0; width: 50%;" />
+    <h3>Appetizer</h3>
+    <p>
+      Broiled oysters with crumbled bacon and cheddar cheese. Topped with
+      hollandaise sauce.
+    </p>
+    <h3>Entree</h3>
+    <p>
+      Grilled Alaskan Salmon Fillet. Served with capers, wild rice, and fresh
+      vegetables.
+    </p>
+    <h3>Dessert</h3>
+    <p>
+      Poached Pears in Red Wine Sauce.
+    </p>
+  </body>
+</html>

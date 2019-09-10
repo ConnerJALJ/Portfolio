@@ -1,0 +1,67 @@
+Conner LaPage-Jenkins
+CS351
+Chapter 1 Excersises 
+--------------------------------
+1.)I personally already host a website through AWS EC2. 
+   That is Amazons web services and it works perfectly for what I need.
+   It is cheap and easy to set up, and has the ability to be expanded to gtow as my needs do.
+   
+2.) The top 3 mobile browsers are (in descending order): Chrome, Safari, and Samsung Internet.
+    
+3.)	https is the hypertext transfer protocol secure, and it is a set of rules and formats for
+	computers to exchange messages.
+	mars is the web server that stores the web page.
+	jpl.nasa.gov is the domain that says how to find the web server on the Internet.
+	msl/images is the breadcrumbs, path or the sequence for where the current web page is saved on the web server.
+	PIA16082_Mitrofanov1F-thm.jpg is the picture being served.
+	
+4.) A container tag or just a container has an opening and a closing tag, and contains information between its two tags.
+	A void tag is just one tag, and it stores its information within itself.
+
+5.) <!DOCTYPE html> tells the browser what type of document is being served.
+
+6.) the closing </strong> tag ends after the closing </p> tag.
+	It should go: 	<body>
+						<p>
+							I hate when I'm studying and a velociraptor throws bananas at me.
+							Does that happen to anyone else?
+							<strong>I hope not!</strong>
+						</p>
+					</body>
+
+7.)	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title> Ernesto Sabato’s On Heroes and Tombs </title>
+	</head>
+	<body>
+		<p lang="es">
+			La vanidad es tan fantastica, que hasta nos induce a preocuparnos de lo que pensaran de
+			nosotros una vez muertos y enterrados.
+		</p>
+	</body>
+	</html>
+	
+
+8.) The <p></p> tags are a container of groups of words meant to form paragraphs.
+	The text within a p tag will be rendered between a blank line above and below it.
+	
+	The <div></div> tags can also contain a group of text but in a more generic way.
+	They do not have to form sentences in a paragraph.
+	
+	We use p tags when we want to form a coherent paragraph, and div tags when we want to group things together but do not need a proper paragraph.
+	
+
+9.) Ian Hickson is the author of the WHATWG HTML5 specification, and a co-editor for the CSS 2.1 specification.
+
+10.) -	<strong>is for to bold the text it contains</strong> 
+	 -  <em>makes the text it contains italic</em>
+	 -  <sub>makes the text it contains a subscript<sub>
+	 - 	<sup>makes the text it contains a superscript<sup>
+    Found at: https://www.w3schools.com/html/html_formatting.asp
+	
+11.) Error: Element h7 not allowed as child of element body in this context. (Suppressing further errors from this subtree.)
+     Error: End tag for body seen, but there were unclosed elements.
+	 Error: Unclosed element h7.
+
+

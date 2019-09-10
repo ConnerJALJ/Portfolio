@@ -1,0 +1,94 @@
+Conner LaPage-Jenkins
+CS351
+Chapter 2 Excersises 
+--------------------------------
+1.)	By following strict coding conventions it helps to make programs easier to maintian.
+
+2.) The Google Style Guide says to remove all trailing white space because it is unnecessary and can complicate diffs.
+
+3.)	<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="author" content="John Dean">
+			<title>Mock Trial How-To</title>
+		</head>
+		<body>
+			<h1>Mock Trial Opening Statements</h1>
+			<hr />
+			<p><strong>Prosecuting Attorney</strong>:<br />
+				Good morning, I am the prosecuting attorney, and I represent the State.
+				I will call three witnesses. At the conclusion of the case,
+				we will ask you to convict the defendant of the crime as charged,
+				thank you.
+			</p>
+			<p><strong>Defense Attorney</strong>:<br />
+				Ladies and Gentlemen of the jury, I intend to prove that my
+				client xxxxxx is innocent of the alleged murder of yyyyyy, and the
+				evidence presented by the prosecution is circumstantial.
+			</p>
+		</body>
+	</html>
+
+4.)	<!--
+		INVESTMENT INTELLIGENCE SYSTEMS CORP.
+		THIS MATERIAL IS COPYRIGHTED AS AN UNPUBLISHED WORK UNDER
+		SECTIONS 104 AND 408 OF TITLE 17 OF THE UNITED STATES CODE.
+		UNAUTHORIZED USE, COPYING, OR OTHER REPRODUCTION IS PROHIBITED BY LAW.
+	-->
+
+5.)	blockquote	: flow
+	br			: empty
+	q			: phrasing 
+
+6.)	<p>
+		Attention Walmart shoppers:<br />
+		Christmas sales begin <time datetime="2019-9-15T05:00">September 15 at 5 am</time>, just in time for the holidays.
+	</p>
+
+7.)	<p>
+		<dfn><abbr title="Solid State Device">SSD</abbr></dfn>, electronic device in which electricity flows through 
+		solid semiconductor crystals (silicon, gallium arsenide, germanium) 
+		rather than through vacuum tubes.
+		The first <abbr title="Solid State Device">SSD</abbr>  
+		was the “cat's whisker” (1906), in which a fine wire was moved 
+		across a solid crystal to detect a radio signal.
+		Transistors, made of one or more semiconductors, 
+		are at the heart of modern <abbr title="Solid State Device">SSD</abbr>; 
+		in the case of integrated circuits, millions of transistors can be involved. 
+	</p>
+
+8.) They are used for presentation and normally that falls into the domain of CSS.
+	W3C does not take them out of the standard because of two different fears:
+	1.)	browsers will keep supporting them and W3C will lose credibility
+	2.)	browsers will stop supporting them and developers will be angered because of legacy code breaking
+
+9.)	<p>
+		The ampersand symbol is “&amp;.”  The greater than or equal symbol is “&ge;.”
+	</p>
+	
+	
+10.)
+	<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="author" content="Conner LaPage-Jenkins">
+			<title>Quatdratic Equation</title>		
+		</head>
+		<style>
+			body {font-family: monospace;}
+		</style>
+		<body>
+			<p>
+				<em>x</em> = (<em>-b</em> ±(<em>b<sup>2</sup></em> - 4<em>ac</em>)<sup>&frac12;</sup>) / 2<em>a</em>
+			</p>
+		</body>
+	</html>
+
+
+
+
+
+
+

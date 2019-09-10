@@ -1,21 +1,28 @@
-.card-shadow{
-    box-shadow: 6px 6px grey;
-    transition: transform, transform .02s ease;
-    transition: box-shadow 1s ease;
+.card-shadow {
+  box-shadow: 6px 6px #000000;
+  transition: transform, transform 0.02s ease;
+  transition: box-shadow 1s ease;
 }
-.card-shadow:hover{
-    box-shadow: 10px 10px black;
-    transform: translateY(-10px);
-    transform: scale(1.005);
+.card-shadow:hover {
+  box-shadow: 10px 10px black;
+  transform: translateY(-10px);
+  transform: scale(1.005);
 }
 
-.nav-shadow{
-    box-shadow: 6px 3px grey;
-    transition: transform, transform 0.3s ease;
-    transition: box-shadow 1s ease;
+.nav-shadow {
+  box-shadow: 6px 3px grey;
+  transition: transform, transform 0.3s ease;
+  transition: box-shadow 1s ease;
 }
-.nav-shadow:hover{
-    box-shadow: 8px 5px black;
-    transform: translateY(5px);
-    transform: scaleY(1.1)
+.nav-shadow:hover {
+  box-shadow: 8px 5px black;
+  transform: translateY(5px);
+  transform: scaleY(1.1);
+}
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+.btn-dark {
+  background-color: #252627 !important;
 }

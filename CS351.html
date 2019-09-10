@@ -20,7 +20,7 @@
   </head>
   <!--Style the body's background for all browsers-->
   <body
-    style="background: url(assets/images/triangles-1430105.svg) no-repeat center center fixed; 
+    style="background-color: #252627; 
               -webkit-background-size: cover;
               -moz-backgournd-size: cover;
               -o-backgournd-size: cover;
@@ -55,20 +55,33 @@
     <div class="container-fluid" style="padding-top: 50px;">
       <div class="row">
         <!--Park Bookstore Card-->
-        <div class="col-12 col-sm-3 p-3 d-flex">
+        <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex">
           <div
-            class="card text-white bg-secondary card-shadow align-self-stretch flex-fill"
+            class="card text-white bg-dark card-shadow align-self-stretch flex-fill"
           >
             <div class="card-header">
               <h4><Strong>Park Bookstore</Strong></h4>
             </div>
-            <div class="card-body d-flex flex-wrap">
-              <img
-                class="card-img-top"
-                src="assets/images/CS351/Hw1.PNG"
-                alt="card image cap"
-              />
-              <p class="card-text">
+            <div class="card-body d-flex flex-column">
+              <button
+                class="btn btn-dark"
+                style="padding: 1%; margin-bottom: 1em;"
+                type="button"
+                data-toggle="collapse"
+                data-target="#parkBookstore"
+                aria-expanded="false"
+                aria-controls="parkBookstore"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/images/CS351/Hw1.PNG"
+                  alt="card image cap"
+                />
+                <span style="display:block;"
+                  >Click to Open/Close Description</span
+                >
+              </button>
+              <p class="card-text collapse" id="parkBookstore">
                 Create the above web page, and name the file parkBookstore.html.
                 Note that the horizontal line is right aligned. To implement
                 that effect, use the margin-right CSS property with a value of
@@ -81,13 +94,13 @@
               </p>
               <a
                 href="assets/CS351Assignments/week1-hw/parkBookstore"
-                class="btn btn-primary align-self-end"
+                class="btn btn-danger mt-3"
                 target="_blank"
                 >parkBookstore.html
               </a>
               <a
                 href="assets/CS351Assignments/rawText/parkBookstore.txt"
-                class="btn btn-info align-self-end ml-3"
+                class="btn btn-warning mt-3"
                 target="_blank"
                 >rawText
               </a>
@@ -95,20 +108,33 @@
           </div>
         </div>
         <!--Galley Menu Card-->
-        <div class="col-12 col-sm-3 p-3 d-flex">
+        <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex">
           <div
-            class="card text-white bg-secondary card-shadow align-self-stretch flex-fill"
+            class="card text-white bg-dark card-shadow align-self-stretch flex-fill"
           >
             <div class="card-header">
               <h4><Strong>Galley Menu</Strong></h4>
             </div>
-            <div class="card-body d-flex flex-wrap">
-              <img
-                class="card-img-top"
-                src="assets/images/CS351/Hw2.PNG"
-                alt="card image cap"
-              />
-              <p class="card-text">
+            <div class="card-body d-flex flex-column">
+              <button
+                class="btn btn-dark"
+                style="padding: 1%; margin-bottom: 1em;"
+                type="button"
+                data-toggle="collapse"
+                data-target="#galleyMenu"
+                aria-expanded="false"
+                aria-controls="galleyMenu"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/images/CS351/Hw2.PNG"
+                  alt="card image cap"
+                />
+                <span style="display:block;"
+                  >Click to Open/Close Description</span
+                >
+              </button>
+              <p class="card-text collapse" id="galleyMenu">
                 Create the following web page, and name the file
                 galleyMenu.html. As always, use heading elements for all
                 headings, not just the ones that appear at the top of the page.
@@ -122,13 +148,13 @@
               </p>
               <a
                 href="assets/CS351Assignments/week1-hw/galleyMenu"
-                class="btn btn-primary align-self-end"
+                class="btn btn-danger mt-3"
                 target="_blank"
                 >galleyMenu.html
               </a>
               <a
                 href="assets/CS351Assignments/rawText/galleyMenu.txt"
-                class="btn btn-info align-self-end ml-3"
+                class="btn btn-warning mt-3"
                 target="_blank"
                 >rawText
               </a>
@@ -136,20 +162,33 @@
           </div>
         </div>
         <!--Program Explanation Card-->
-        <div class="col-12 col-sm-3 p-3 d-flex">
+        <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex">
           <div
-            class="card text-white bg-secondary card-shadow align-self-stretch flex-fill"
+            class="card text-white bg-dark card-shadow align-self-stretch flex-fill"
           >
             <div class="card-header">
               <h4><Strong>Program Explanation</Strong></h4>
             </div>
-            <div class="card-body d-flex flex-wrap">
-              <img
-                class="card-img-top"
-                src="assets/images/CS351/Hw3.PNG"
-                alt="card image cap"
-              />
-              <p class="card-text">
+            <div class="card-body d-flex flex-column">
+              <button
+                class="btn btn-dark"
+                style="padding: 1%; margin-bottom: 1em;"
+                type="button"
+                data-toggle="collapse"
+                data-target="#pgmExplanation"
+                aria-expanded="false"
+                aria-controls="pgmExplanation"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/images/CS351/Hw3.PNG"
+                  alt="card image cap"
+                />
+                <span style="display:block;"
+                  >Click to Open/Close Description</span
+                >
+              </button>
+              <p class="card-text collapse" id="pgmExplanation">
                 Create a web page with a filename of pgmExplanation.html that
                 explains something interesting about a program. Your explanation
                 must make sense. You must use grammatically correct sentences
@@ -164,19 +203,153 @@
               </p>
               <a
                 href="assets/CS351Assignments/week2-hw/pgmExplanation"
-                class="btn btn-primary align-self-end"
+                class="btn btn-danger mt-3"
                 target="_blank"
                 >pgmExplanation.html
               </a>
               <a
                 href="assets/CS351Assignments/rawText/pgmExplanation.txt"
-                class="btn btn-info align-self-end ml-3"
+                class="btn btn-warning mt-3"
                 target="_blank"
                 >rawText
               </a>
             </div>
           </div>
         </div>
+        <!--End Program Explanation Card-->
+        <!--Start CSS Practice Card-->
+        <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex">
+          <div
+            class="card text-white bg-dark card-shadow align-self-stretch flex-fill"
+          >
+            <div class="card-header">
+              <h4><Strong>CSS Practice through Societal Quotes</Strong></h4>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <button
+                class="btn btn-dark"
+                style="padding: 1%; margin-bottom: 1em;"
+                type="button"
+                data-toggle="collapse"
+                data-target="#cssPractice"
+                aria-expanded="false"
+                aria-controls="cssPractice"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/images/CS351/Hw4.PNG"
+                  alt="card image cap"
+                />
+                <span style="display:block;"
+                  >Click to Open/Close Description</span
+                >
+              </button>
+
+              <p class="card-text collapse" id="cssPractice">
+                Provide complete code for an implementation of the above web
+                page and name the file cssPractice_societalQuotes.html. You must
+                use the HTML body container code provided (you are not allowed
+                to modify it). To support the HTML body container code, you must
+                include a style container.<br />
+                Your style container must:<br />
+                ▸ Implement an appropriate type selector rule that would apply
+                to all possible heading elements (not just the ones shown).<br />
+                ▸ Implement appropriate class selector rules with bold and
+                strike-through selectors.<br />
+                ▸ Implement an appropriate type class selector rule for p
+                elements that use a gray-background selector. <br />
+                ▸ Implement a type selector rule for all p elements. The rule
+                should specify:<br />
+                <span>
+                  &nbsp;&nbsp;&nbsp;• A 5-pixel padding<br />
+                  &nbsp;&nbsp;&nbsp;• 50-pixel left and right margins<br />
+                  &nbsp;&nbsp;&nbsp;• A dashed red border<br />
+                  &nbsp;&nbsp;&nbsp;• Times New Roman or serif font text that is
+                  justified with both the left and right sides<br />
+                  &nbsp;&nbsp;&nbsp;• 10-pixel indentation
+                </span>
+              </p>
+              <p class="card-text">
+                Language: HTML5 <br />
+                Rough Date: August 2019 <br />
+                Author: Conner LaPage-Jenkins<br />
+              </p>
+              <a
+                href="assets/CS351Assignments/week3-hw/cssPractice_societalQuotes"
+                class="btn btn-danger mt-3"
+                target="_blank"
+                >cssPractice_societalQuotes.html
+              </a>
+              <a
+                href="assets/CS351Assignments/rawText/cssPractive-societalQuotes.txt"
+                class="btn btn-warning mt-3"
+                target="_blank"
+                >rawText
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--End CSS Practice Card-->
+        <!--Start Newspaper Card-->
+        <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex">
+          <div
+            class="card text-white bg-dark card-shadow align-self-stretch flex-fill"
+          >
+            <div class="card-header">
+              <h4><Strong>Newspaper</Strong></h4>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <button
+                class="btn btn-dark"
+                style="padding: 1%; margin-bottom: 1em;"
+                type="button"
+                data-toggle="collapse"
+                data-target="#newspaper"
+                aria-expanded="false"
+                aria-controls="newspaper"
+              >
+                <img
+                  class="card-img-top"
+                  src="assets/images/CS351/Hw5.PNG"
+                  alt="card image cap"
+                />
+                <span style="display:block;"
+                  >Click to Open/Close Description</span
+                >
+              </button>
+
+              <p class="card-text collapse" id="newspaper">
+                Create the above web page, and name the file newspaper.html.<br />
+                The window background must render using the color cyan. The top
+                heading must render using the color blue. For the sake of
+                getting practice with different color value formats, you must
+                use different techniques to specify each of the three color
+                messages:<br />
+                silver—use an HSL value<br />
+                fuchsia—use a hexadecimal RGB<br />
+                value bright orange—use an integer RGB value
+              </p>
+              <p class="card-text">
+                Language: HTML5 <br />
+                Rough Date: August 2019 <br />
+                Author: Conner LaPage-Jenkins<br />
+              </p>
+              <a
+                href="assets/CS351Assignments/week3-hw/newspaper"
+                class="btn btn-danger mt-3"
+                target="_blank"
+                >newspaper.html
+              </a>
+              <a
+                href="assets/CS351Assignments/rawText/newspaper.txt"
+                class="btn btn-warning mt-3"
+                target="_blank"
+                >rawText
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--End Newspaper Card-->
       </div>
     </div>
     <!--End Assignment Cards-->

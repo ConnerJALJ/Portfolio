@@ -26,3 +26,25 @@
 .btn-dark {
   background-color: #252627 !important;
 }
+
+@media only screen and (min-width: 576px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-bookstore-relocate {
+    position: relative;
+    bottom: -7%;
+  }
+
+  .btn-pgmexplanation-relocate {
+    position: relative;
+    bottom: -13.75%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .btn-pgmexplanation-relocate {
+    position: relative;
+    bottom: -14%;
+  }
+}

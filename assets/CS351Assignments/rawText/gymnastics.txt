@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Conner LaPage-Jenkins" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gymnastics</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(211, 235, 243);
+      padding: 20px;
+      padding-right: 10%;
+    }
+
+    div.gymnasts {
+      display: flex;
+      flex-direction: row;
+    }
+
+    header {
+      position: relative;
+      top: 0;
+      right: 20%;
+      left: 0;
+
+      display: flex;
+      flex-direction: column;
+      background-color: navy;
+      color: gold;
+
+      text-align: center;
+    }
+
+    section.female {
+      position: relative;
+      left: 20px;
+    }
+
+    section.male {
+      position: relative;
+      left: 30%;
+    }
+
+    figure {
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <header>
+      <h1 style="margin-bottom: 1px;"><em>Gymnastics</em></h1>
+      <h1 style="margin-top: 1px;"><em>Go for the gold!</em></h1>
+    </header>
+
+    <div class="gymnasts">
+      <section class="female">
+        <h3>Greatest Female Gymnasts</h3>
+        <ul style="list-style-type: circle;">
+          <li>Rumania:</li>
+          <ol>
+            <li>Nadia Comaneci</li>
+          </ol>
+          <li>Russia:</li>
+          <ol start="2">
+            <li>Olga Korbut</li>
+            <li>Larisa Latynina</li>
+          </ol>
+          <li>United States:</li>
+          <ol start="4">
+            <li>Gabby Douglas</li>
+            <li>Mary Lou Retton</li>
+          </ol>
+        </ul>
+      </section>
+
+      <section class="male">
+        <h3>Greatest Male Gymnasts</h3>
+        <ul style="list-style-type: circle;">
+          <li>Russia:</li>
+          <ol>
+            <li>Vitaly Scherbo</li>
+            <li>Alexei Nemov</li>
+            <li>Nikolai Andrianov</li>
+          </ol>
+          <li>Japan:</li>
+          <ol start="4">
+            <li>Sawao Kato</li>
+          </ol>
+        </ul>
+      </section>
+    </div>
+    <figure>
+      <img src="./gymnast-img.PNG" alt="image of gymnast" />
+      <figcaption>Flying Throug the Air with the Greatest of Ease</figcaption>
+    </figure>
+  </body>
+</html>

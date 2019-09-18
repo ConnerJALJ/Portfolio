@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Conner LaPage-Jenkins" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Food Pyramid</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    caption,
+    th,
+    td {
+      padding: 1em;
+    }
+
+    table,
+    tbody th,
+    tbody td {
+      border: 1px solid black;
+      border-spacing: 3px;
+    }
+    tbody th {
+      text-align: left;
+    }
+    tbody td {
+      text-align: center;
+    }
+
+    thead {
+      background: red;
+      color: white;
+    }
+    thead th {
+      border: 1px solid white;
+      border-spacing: 3px;
+    }
+  </style>
+  <body>
+    <table>
+      <caption>
+        <h1 style="font-weight: 400">The Food Pyramid</h1>
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th colspan="2">Serving Guidlines</th>
+        </tr>
+        <tr>
+          <th>Food Group</th>
+          <th>2005-2010</th>
+          <th>2011-present</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            Milk Group <br />
+            <em>(Milk, Yogurt, Cheese)</em>
+          </th>
+          <td>2-3</td>
+          <td>3-4</td>
+        </tr>
+        <tr>
+          <th>
+            Meat Group<br />
+            <em>(Beef, Poultry, Fish, Beans)</em>
+          </th>
+          <td>2-3</td>
+          <td>5-6</td>
+        </tr>
+        <tr>
+          <th>Fruits</th>
+          <td>2-4</td>
+          <td>5-6</td>
+        </tr>
+        <tr>
+          <th>Vegetables</th>
+          <td>3-5</td>
+          <td>1-2</td>
+        </tr>
+        <tr>
+          <th>Heavily Salted Snacks</th>
+          <td>1-2</td>
+          <td>3-5</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

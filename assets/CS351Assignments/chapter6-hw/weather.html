@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Conner LaPage-Jenkins" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>World Weather</title>
+  </head>
+  <style>
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    a.continent {
+      text-decoration: none;
+    }
+    a.continent:hover {
+      background-color: silver;
+    }
+
+    #africa,
+    #australia,
+    #south-america {
+      text-align: right;
+    }
+
+    .caption {
+      display: table-caption;
+      caption-side: top;
+      width: 100%;
+    }
+
+    .cell {
+      display: table-cell;
+    }
+
+    img {
+      width: 200%;
+      height: 200%;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    .row {
+      display: table-row;
+      width: 100vw;
+      height: auto;
+    }
+
+    .table {
+      display: table;
+      width: 80%;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  </style>
+  <body>
+    <div class="table">
+      <h1 class="caption">World Weather</h1>
+      <div class="row">
+        <div class="cell">
+          <a class="continent" href="#africa">Africa</a> |
+          <a class="continent" href="#australia">Australia</a> |
+          <a class="continent" href="#south-america">South America</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="cell">
+          <img src="./weather1.jpg" alt="storm clouds" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="cell"><h4 id="africa">Africa:</h4></div>
+        <div class="cell">
+          <ul>
+            <li>
+              <a
+                href="https://weather.com/weather/today/l/6.52,3.38?par=google&temp=f"
+                target="_blank"
+                >Lagos, Nigeria</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://weather.com/weather/today/l/-29.86,31.02?par=google&temp=f"
+                target="_blank"
+                >Durban, South Africa</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://weather.com/weather/today/l/-4.44,15.27?par=google&temp=f"
+                target="_blank"
+                >Kinshasa, Democratic Republic of the Congo</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="cell">
+          <h4 id="australia">Australia:</h4>
+        </div>
+        <div class="cell">
+          <ul>
+            <li>
+              <a
+                href="https://weather.com/weather/today/l/-33.87,151.21?par=google&temp=f"
+                target="_blank"
+                >Sydney, Australia</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://weather.com/weather/today/l/-31.95,115.86?par=google&temp=f"
+                target="_blank"
+                >Perth, Australia</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://weather.com/weather/today/l/-37.81,144.96?par=google&temp=f"
+                target="_blank"
+                >Melbourne, Australia</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="cell">
+          <h4 id="south-america">South America:</h4>
+        </div>
+        <div class="cell">
+          <ul>
+            <li>
+              <a
+                href="https://weather.com/weather/today/l/10.39,-75.48?par=google&temp=f"
+                target="_blank"
+                >Cartagena, Colombia</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://weather.com/weather/today/l/-12.05,-77.04?par=google&temp=f"
+                target="_blank"
+                >Lima, Peru</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://weather.com/weather/today/l/-34.60,-58.38?par=google&temp=f"
+                target="_blank"
+                >Buenos Aires, Argentina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

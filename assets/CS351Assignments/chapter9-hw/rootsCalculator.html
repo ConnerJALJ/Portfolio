@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Conner LaPage-Jenkins">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quadratic Equation Roots Calculator</title>
+</head>
+
+<body>
+    <!--Introduction and Description-->
+    <h1>Quadratic Equation Roots Calculator</h1>
+    <p>This web page finds the roots of a polynomial equation of the following form:</p><br />
+    <p><em>ax</em><sup>2</sup>+<em>bx</em>+<em>c</em>=0</p><br />
+    <p><em>a</em>, <em>b</em>, <em>c</em> must be integers between <em>-99</em> and <em>+99</em> and <em>a</em> must be
+        non-zero</p>
+
+    <!--quadration equation input-->
+    <form>
+        <label for="a_input">a:</label>
+        <input type="number" value="" min="-99" max="+99" id="a_input" class="a" oninput="check(this)" />
+
+        <label for="a_input">b:</label>
+        <input type="number" value="" min="-99" max="+99" id="b_input" class="b" oninput="check(this)" />
+
+        <label for="a_input">c:</label>
+        <input type="number" value="" min="-99" max="+99" id="c_input" class="c" oninput="check(this)" />
+        <br /><br />
+        <input type="button" value="Calculate roots" onclick="calculateRoots(this.form)" />
+    </form>
+    <p id="answer"></p>
+</body>
+
+<script>
+    function check(input) {
+        if (input.value == 0) {
+            input.setCustomValidity('The number must not be zero.');
+        } else {
+            input.setCustomValidity('');
+        }
+    }
+
+    function calculateRoots(form) {
+        let elements = [form.elements['a_input'], form.elements['b_input'], form.elements['c_input']];
+
+        let a = elements[elements.indexOf(a_input)].value;
+        let b = elements[elements.indexOf(b_input)].value;
+        let c = elements[elements.indexOf(c_input)].value;
+
+        let alertChecks = [];
+
+
+        elements.forEach(element => {
+            if (!Number.isInteger(Number(element.value))) {
+                alertChecks.push('Invalid entry for ' + element.className +
+                    '. Must be an integer between -99 and +99.\n');
+            }
+            if (element.value === '') {
+                alertChecks.push('Invalid entry for ' + element.className +
+                    '. Must be an integer between -99 and + 99.\n');
+            }
+            if (parseInt(element.value) === 0) {
+                alertChecks.push('Invalid entry for ' + element.className +
+                    '. Must be a non-zero integer between -99 and +99.\n');
+            }
+        });
+
+        if (alertChecks.length > 0) {
+            alert(alertChecks.toString().replace(/\,/g, ''))
+
+        } else {
+            let xPlus = (-1 * b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+            let xMinus = (-1 * b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+
+            if ((b * b) < (4 * a * c)) {
+                document.getElementById('answer').innerHTML = "Solution: <em>x's</em> roots are imaginary";
+            } else if ((b * b) == (4 * a * c)) {
+                document.getElementById('answer').innerHTML = "Solution: <em>x</em>= " + xMinus;
+            } else if ((b * b) > (4 * a * c)) {
+                document.getElementById('answer').innerHTML = "Solution: <em>x</em>= " + xPlus + ", <em>x</em>= " +
+                    xMinus;
+            }
+        }
+
+    }
+</script>
+
+</html>

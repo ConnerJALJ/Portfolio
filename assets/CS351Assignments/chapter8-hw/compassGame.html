@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Conner LaPage-Jenkins" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compass Game</title>
+  </head>
+  <style>
+    .arrow {
+      font-size: 1em;
+      font-weight: 900;
+      margin: 0em 0.5em;
+    }
+
+    #compass-game {
+      display: table;
+    }
+    #compass-game > .row {
+      display: table-row;
+    }
+    #compass-game > .row > .cell {
+      display: table-cell;
+    }
+
+    .diagonal {
+      transform: rotate(-45deg);
+    }
+
+    .direction {
+      color: red;
+      padding: 0em 0.5em;
+    }
+  </style>
+
+  <body>
+    <!--NO JAVASCRIPT ERROR MESSAGE-->
+    <noscript>
+      <p>
+        This web page uses JavaScript. For proper results, you must use a web
+        browser with JavaScript enabled.
+      </p>
+    </noscript>
+
+    <!--Game Description-->
+    <h1>Compass Game</h1>
+    <p>
+      The direction letters on the "compass" are scrambled. Press the arrwos to
+      properly position the direction letters.
+    </p>
+
+    <!--Shuffle-->
+    <input type="button" value="Shuffle" onclick="shuffle()" /><br />
+
+    <!--Game-->
+    <div id="compass-game">
+      <div class="row">
+        <div class="cell">
+          <input
+            class="diagonal arrow"
+            type="button"
+            value="↔"
+            onclick="swapTopLeft()"
+          />
+        </div>
+
+        <div class="cell">
+          <h1 id="top-dir" class="direction">N</h1>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="row">
+        <div class="cell">
+          <h1 id="left-dir" class="direction">W</h1>
+        </div>
+
+        <div class="cell">
+          <input
+            class="arrow"
+            type="button"
+            value="↔"
+            onclick="swapRightLeft()"
+          />
+        </div>
+
+        <div class="cell">
+          <h1 id="right-dir" class="direction">E</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell">
+          <h1 id="bottom-dir" class="direction">S</h1>
+        </div>
+
+        <div class="cell">
+          <input
+            class="diagonal arrow"
+            type="button"
+            value="↔"
+            onclick="swapRightBottom()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--Restart and Alt. Controls-->
+    <p>
+      To restart the game, press <em>Restart</em>, enter N, S, E, W in any order
+      in the boxes below, and then press<em>Update</em>.
+    </p>
+
+    <!--Text Controls-->
+    <form action="">
+      <!--Restart the game-->
+      <input type="button" value="Restart" onclick="restart()" /><br />
+
+      Top:
+      <input type="text" id="top-text" size="1" maxlength="1" disabled />
+      Bottom:
+      <input type="text" id="bottom-text" size="1" maxlength="1" disabled />
+      Right:
+      <input type="text" id="right-text" size="1" maxlength="1" disabled />
+      Left:
+      <input type="text" id="left-text" size="1" maxlength="1" disabled /><br />
+
+      <!--Update game-->
+      <input
+        type="button"
+        id="update-btn"
+        value="Update"
+        onclick="update(this.form)"
+        disabled
+      />
+    </form>
+  </body>
+  <script>
+    //! THIS IS FOR EXTRA CREDIT
+    // Function to randomize the board
+    function shuffle() {
+      var directions = ['N', 'E', 'W', 'S']; // Container for the directions
+      var positions = ['top-dir', 'right-dir', 'bottom-dir', 'left-dir']; // Container for positions
+      var uniqueNums = [];
+      uniqueNums.length = 0;
+
+      while (uniqueNums.length != 4) {
+        var randGen = Math.floor(Math.random() * 4);
+        if (uniqueNums.indexOf(randGen) == -1) {
+          uniqueNums.push(randGen);
+        }
+      }
+
+      for (var i = 0; i < 4; ++i) {
+        document.getElementById(positions[i]).innerHTML =
+          directions[uniqueNums[i]];
+      }
+    }
+
+    // Function to swap out the top and left positions
+    function swapTopLeft() {
+      var temp = document.getElementById('top-dir').innerHTML;
+      document.getElementById('top-dir').innerHTML = document.getElementById(
+        'left-dir'
+      ).innerHTML;
+      document.getElementById('left-dir').innerHTML = temp;
+    }
+
+    // Function to swap out the right and left positions
+    function swapRightLeft() {
+      var temp = document.getElementById('right-dir').innerHTML;
+      document.getElementById('right-dir').innerHTML = document.getElementById(
+        'left-dir'
+      ).innerHTML;
+      document.getElementById('left-dir').innerHTML = temp;
+    }
+
+    // Function to swap out the right and bottom positions
+    function swapRightBottom() {
+      var temp = document.getElementById('right-dir').innerHTML;
+      document.getElementById('right-dir').innerHTML = document.getElementById(
+        'bottom-dir'
+      ).innerHTML;
+      document.getElementById('bottom-dir').innerHTML = temp;
+    }
+
+    // Function to wipe the board
+    function restart() {
+      ['top-dir', 'right-dir', 'bottom-dir', 'left-dir'].forEach(position => {
+        document.getElementById(position).innerHTML = '_'; // Using a blank space caused everything to shrink in on itself
+        document.getElementById(position).style.color = 'white'; // So changing the color to white with an underscore works better
+
+        document.getElementById('top-text').disabled = false;
+        document.getElementById('left-text').disabled = false;
+        document.getElementById('right-text').disabled = false;
+        document.getElementById('bottom-text').disabled = false;
+        document.getElementById('update-btn').disabled = false;
+      });
+    }
+
+    // Function to update the board based on the text controls
+    function update(form) {
+      let top = form.elements['top-text'].value.toUpperCase();
+      let left = form.elements['left-text'].value.toUpperCase();
+      let right = form.elements['right-text'].value.toUpperCase();
+      let bottom = form.elements['bottom-text'].value.toUpperCase();
+
+      // Only update if all inputs are set
+      if (
+        [top, left, right, bottom].every(
+          x => x && ['N', 'S', 'E', 'W'].includes(x)
+        )
+      ) {
+        document.getElementById('top-dir').innerHTML = top;
+        document.getElementById('left-dir').innerHTML = left;
+        document.getElementById('right-dir').innerHTML = right;
+        document.getElementById('bottom-dir').innerHTML = bottom;
+
+        // Need to change the color back to red when we update
+        document.getElementById('top-dir').style.color = 'red';
+        document.getElementById('left-dir').style.color = 'red';
+        document.getElementById('right-dir').style.color = 'red';
+        document.getElementById('bottom-dir').style.color = 'red';
+      } else {
+        console.error('Will not update unless all inputs are valid');
+      }
+
+      document.getElementById('top-text').disabled = true;
+      document.getElementById('left-text').disabled = true;
+      document.getElementById('right-text').disabled = true;
+      document.getElementById('bottom-text').disabled = true;
+      document.getElementById('update-btn').disabled = true;
+    }
+  </script>
+</html>

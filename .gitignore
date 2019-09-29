@@ -1,3 +1,6 @@
 # Ignore the zip files 
 assets/CS351Assignments/compressed_files
 *.zip
+
+# Ignore vscode directory
+.vscode

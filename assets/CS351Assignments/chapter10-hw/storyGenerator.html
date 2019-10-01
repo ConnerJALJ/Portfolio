@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Conner LaPage-Jenkins">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Story Generator</title>
+</head>
+<style>
+  .button {
+    padding: .5em;
+  }
+
+  .done-btn {
+    font-family: Tahoma, Geneva, sans-serif
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form label {
+    flex: 0 0 25%;
+  }
+
+  form input {
+    flex: 0 0 50%;
+  }
+
+  form input.button {
+    margin: 1em 2em 0 0;
+    flex: 0 0 25%;
+  }
+
+  .prefilled {
+    color: blue;
+    font-family: "Comic Sans MS", cursive, sans-serif
+  }
+
+  .unfilled {
+    color: red;
+    font-family: "Comic Sans MS", cursive, sans-serif
+  }
+
+  section#story-output {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+  }
+</style>
+
+<body>
+  <section id="story-input">
+    <h1>Story Generator</h1>
+    <p>Enter approriate values in all of the text boxes.
+      Then click the Done button to generate a story with your entered values pluffing into it.
+    </p>
+
+    <form id="form">
+      <label for="noun-input">noun: </label>
+      <input type="text" name="story-piece" id="noun-input">
+
+      <label for="ptv-input">past tense verb: </label>
+      <input type="text" name="story-piece" id="ptv-input">
+
+      <label for="adjective-input">adjective: </label>
+      <input type="text" name="story-piece" id="adjective-input">
+
+      <label for="ptv-input">past tense verb: </label>
+      <input type="text" name="story-piece" id="ptv-input">
+
+      <label for="adjective-input">adjective: </label>
+      <input type="text" name="story-piece" id="ptv-input">
+
+      <input type="button" value="Done" class="button done-btn" onclick="submitStory(this.form)">
+      <input type="button" value="Reset" class="button" onclick="this.form.reset()">
+    </form>
+  </section>
+
+  <section id="story-output">
+    <p id="story" class="prefilled">It was a dark and stormy night. A shot rang out!
+      A <span class="unfilled">&lt;missing text&gt;</span> slammed.
+      The maid <span class="unfilled">&lt;missing text&gt;</span>.
+      Suddenly, a <span class="unfilled">&lt;missing text&gt;</span>
+      ship appeared on the horizon!
+      While millions of people <span class="unfilled">&lt;missing text&gt;</span>
+      , the king lived in luxury.
+      Meanwhile, on a <span class="unfilled">&lt;missing text&gt;</span>
+      farm in Kansas, a boy was growing up.
+      <br /><br />
+      The End
+    </p>
+    <input type="button" value="Return" class="button" onclick="returnToInput()">
+  </section>
+
+</body>
+
+<script src="./storyGenerator.js"></script>
+
+</html>

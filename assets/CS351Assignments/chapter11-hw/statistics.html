@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Conner LaPage-Jenkins">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Statistics Calculator</title>
+</head>
+<style>
+  h1,
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  .buttons-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .buttons-section>input,
+  .buttons-section>span {
+    padding: 1em 0;
+    flex: 0 0 33.33%;
+  }
+
+  .buttons-section>span {
+    text-align: center;
+  }
+
+  .input-section {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .input-section>input {
+    margin-left: 0;
+    flex: 100 0 auto;
+  }
+
+  .input-section>label {
+    padding-top: 5px;
+    margin-right: 1em;
+  }
+</style>
+
+<body>
+  <h1>Statistics Calculator</h1>
+  <h2>Enter a list of numbers separated by a space.</h2>
+
+  <form name="calc-input">
+    <div class="input-section">
+      <label for="num-lst">Number list:</label>
+      <input type="text" name="num-lst" id="array-of-numbers" required autofocus>
+    </div>
+    <br /><br />
+    <div class="buttons-section">
+      <input type="button" value="Mean" id="mean-btn" onclick="showMean()">
+      <input type="button" value="Variance" id="variance-btn" onclick="showVariance()">
+      <input type="button" value="Standard Deviation" id="std-deviation-btn" onclick="showStdDeviation()">
+      <span id="mean-output"></span>
+      <span id="variance-output"></span>
+      <span id="std-deviation-output"></span>
+    </div>
+  </form>
+</body>
+<script src="./statistics.js"></script>
+
+</html>
